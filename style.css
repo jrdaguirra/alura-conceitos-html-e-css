@@ -1,0 +1,67 @@
+/* paleta de cores
+#fffcf2 - Floral White
+#ccc5b9 - Timberworlf (gray)
+#403d39 - Black Olive (dark gray)
+#252422 - Erie black
+#eb5e28 - Flame (orange)
+#f5cb5c - Saffron (yellow)
+*/
+
+header {
+    background-color: #eb5e28;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: normal;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #fffcf2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    color: #eb5e28;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3em;
+}
+
+h2 {
+    color: #eb5e28;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+}
+
+h3 {
+    color: #eb5e28;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5em
+}
+
+p {
+    color: #252422;
+    text-align: justify;
+}
+
+code {
+    background-color: #ccc5b9;
+    color: #403d39;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+}
