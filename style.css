@@ -13,8 +13,9 @@ header {
     font-size: 32px;
     font-weight: bold;
     font-style: normal;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 5px 2px;
+    border-radius: 10px 2px;
+    text-align: center;
 }
 
 body {
@@ -23,7 +24,16 @@ body {
     font-size: 1em;
 }
 
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+
 h1 {
+    text-align: center;
     color: #eb5e28;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -59,6 +69,24 @@ code {
     border-radius: 4px;
 }
 
+/* Alterando cor de links na main */
+main a:link {
+    color: #252422;
+}
+
+main a:visited {
+    color: #252422;
+}   
+
+main a:hover {
+    color: #eb5e28;
+}
+
+main a.active {
+    color: #eb5e28;
+}
+
+
 .container {
     display: flex; 
     flex-wrap: wrap; 
@@ -66,17 +94,64 @@ code {
     align-items: center; 
 }
 
-.rodape {
-    color: #fffcf2; 
-}
-
 footer {
+    align-items: center;
     background-color: #403d39;
     padding: 5px 2px;
     border-radius: 10px 2px;
     font-size: 0.9em;
-    position: fixed;
+    /*position: fixed;*/
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+footer p {
+    color: #fffcf2;
+}
+
+.criado-por {
+    display: flex;
+    align-items: center; /* Alinha verticalmente se as alturas forem diferentes */
+    gap: 20px; /* Espaço entre as divs */
+    justify-content: center; /* Centraliza horizontalmente */
+
+}
+
+.imagem {
+    width: 50px;
+    height: 50px;
+}
+
+.imagem img {
+    width: 100%; /* Garante que a imagem ocupa a largura da div */
+    display: block;
+    transition: all 0.3s ease; /* Transição suave para o efeito de hover */
+}
+
+.imagem img:hover {
+    color: #eb5e28;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgb (0,0,0,0.5); /* Sombra ao passar o mouse */
+}
+
+.texto {
+    max-width: 400px; /* Limita a largura do texto */
+}
+
+/* Alterando cor de links no footer */
+footer a:link {
+    color: #fffcf2;
+}
+
+footer a:visited {
+    color: #fffcf2;
+}   
+
+footer a:hover {
+    color: #eb5e28;
+}
+
+footer a.active {
+    color: #eb5e28;
 }
